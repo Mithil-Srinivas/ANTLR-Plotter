@@ -147,24 +147,18 @@ ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File("plot.png")
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-username>/antlr-calculator-plotter.git
-   cd antlr-calculator-plotter
+   git clone https://github.com/Mithil-Srinivas/ANTLR-Plotter.git
+   cd ANTLR-Plotter
    ```
 
 2. Build the project:
 
    ```bash
-   mvn clean package -Dantlr4.skip=true
+   mvn clean package
    ```
 
 3. Run the JAR:
 
    ```bash
-   java -jar target/CalculatorApp-jar-with-dependencies.jar
+   java -jar target/Calculator-1.0-SNAPSHOT.jar
    ```
-
-If using JavaFX manually:
-
-```bash
-java --module-path "path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.graphics -jar target/CalculatorApp-jar-with-dependencies.jar
-```
