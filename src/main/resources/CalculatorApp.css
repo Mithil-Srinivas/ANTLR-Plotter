@@ -1,0 +1,117 @@
+/* ============= Root Layout ============= */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #1e1e1e; /* dark background */
+    -fx-text-fill: #f0f0f0;
+}
+
+/* ============= Labels ============= */
+.label {
+    -fx-text-fill: #dddddd;
+    -fx-font-weight: bold;
+}
+
+/* ============= Text Areas ============= */
+.text-area {
+    -fx-control-inner-background: #2d2d2d;    /* inside editor background */
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #f0f0f0;                   /* bright text */
+    -fx-highlight-fill: #3c3f41;
+    -fx-highlight-text-fill: white;
+    -fx-border-color: #444;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-font-family: Consolas, monospace;
+    -fx-font-size: 13px;
+}
+
+.text-area .content {
+    -fx-background-color: #2d2d2d; /* ensure scroll background is dark too */
+}
+
+/* Console slightly different shade */
+#console {
+    -fx-control-inner-background: #252526;
+    -fx-background-color: #252526;
+}
+
+/* ============= Buttons ============= */
+.button {
+    -fx-font-weight: bold;
+    -fx-padding: 6 15 6 15;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.run-button {
+    -fx-background-color: #43b581;
+    -fx-text-fill: white;
+}
+
+.run-button:hover {
+    -fx-background-color: #3aa76d;
+}
+
+.clear-button {
+    -fx-background-color: #f04747;
+    -fx-text-fill: white;
+}
+
+.clear-button:hover {
+    -fx-background-color: #d03b3b;
+}
+
+/* ============= Split Pane & Chart ============= */
+.split-pane-divider {
+    -fx-background-color: #3a3a3a;
+}
+
+.chart-plot-background {
+    -fx-background-color: #1e1e1e;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #333;
+}
+
+.chart-title, .axis-label, .chart-legend {
+    -fx-text-fill: #e0e0e0;
+}
+/* ================= Chart Legend Styling ================= */
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e0e0e0; /* light gray text */
+}
+
+.chart-legend-item {
+    -fx-text-fill: #e0e0e0; /* readable text color */
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 50%;
+    -fx-padding: 5;
+    -fx-border-color: transparent;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.save-button {
+    -fx-background-color: #7289da;
+    -fx-text-fill: white;
+}
+
+.save-button:hover {
+    -fx-background-color: #5b6eae;
+}
+
+.load-button {
+    -fx-background-color: #faa61a;
+    -fx-text-fill: black;
+}
+
+.load-button:hover {
+    -fx-background-color: #e6951a;
+}
